@@ -36,6 +36,18 @@
             "./src/Repository/.gitignore"
         ]
     },
+    "doctrine/doctrine-fixtures-bundle": {
+        "version": "4.1",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "3.0",
+            "ref": "1f5514cfa15b947298df4d771e694e578d4c204d"
+        },
+        "files": [
+            "./src/DataFixtures/AppFixtures.php"
+        ]
+    },
     "doctrine/doctrine-migrations-bundle": {
         "version": "3.4",
         "recipe": {
@@ -105,6 +117,15 @@
             "./src/Kernel.php",
             "./.editorconfig"
         ]
+    },
+    "symfony/maker-bundle": {
+        "version": "1.63",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "1.0",
+            "ref": "fadbfe33303a76e25cb63401050439aa9b1a9c7f"
+        }
     },
     "symfony/property-info": {
         "version": "7.3",
@@ -176,6 +197,19 @@
         },
         "files": [
             "./config/packages/validator.yaml"
+        ]
+    },
+    "zenstruck/foundry": {
+        "version": "2.6",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "2.6",
+            "ref": "3c7f73fdbf04b3a00e0664b0b9cc6fdebbb50a8a"
+        },
+        "files": [
+            "./config/packages/zenstruck_foundry.yaml",
+            "./src/Story/AppStory.php"
         ]
     }
 }
