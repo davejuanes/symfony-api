@@ -14,6 +14,9 @@ use Symfony\Component\Serializer\Annotation\Groups;
 
 #[ORM\Entity(repositoryClass: CategoryRepository::class)]
 #[ApiResource(
+    // shortName: 'nuevo-acceso',
+    // prefix: 'prefix',
+    description: 'Información adicional sobre esta clase',
     operations: [
         new Get(),
         new GetCollection(),
@@ -26,10 +29,16 @@ class Category
     #[ORM\GeneratedValue]
     #[ORM\Column]
     #[Groups(['category:read', 'post:read'])]
+    /**
+     * Identificador unico en la tabla category
+    */
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
     #[Groups(['category:read', 'post:read'])]
+    /**
+     * Nombre de la categoria
+    */
     private ?string $name = null;
 
     /**
